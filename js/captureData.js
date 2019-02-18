@@ -79,7 +79,7 @@ function addData(){
 		cT = tmpCanvas.getContext('2d', {alpha: false});
 		cT.drawImage(newImg,0,0,32,24);
 		let img = cT.getImageData(0,0,32,24);
-		img = ImageUtils.gaussianBlur(img);
+		img = ImageUtils.gaussianBlur(img); // don't blurr in the preview image, just here
 		let finalData = Array(32*24);
 		
 		for(let i = 0; i < finalData.length; i++){
@@ -95,7 +95,7 @@ function addData(){
 function capture(label){
 	let img = cO.getImageData(0,0,320,240);
 	img = ImageUtils.rgb2gray(img);
-	img = ImageUtils.gaussianBlur(img);
+	//img = ImageUtils.gaussianBlur(img); // Only blurring the sacale down image, on the addData function
 	cD.putImageData(img,0,0);
 	addData(label);
 }
