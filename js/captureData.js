@@ -67,8 +67,10 @@ function addData(){
 		label = JSON.parse(labelInput.value);
 	}catch(e){
 		console.error( e.message );
+	}
+	if( !(label instanceof Array) ){
 		status.innerHTML = "Use [0,1,0] format on label input";
-		return;
+		return
 	}
 	let newImg = new Image();
 	newImg.src = display.toDataURL();
