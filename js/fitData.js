@@ -22,19 +22,3 @@ function init(){
 	
 	nn.save();
 }
-
-function draw(x){
-	let canvas = document.createElement('canvas');
-	canvas.width = 32;
-	canvas.height = 24;
-	let c = canvas.getContext('2d');
-	for(let i = 0; i < 32; i++){
-		for(let j = 0; j < 24; j++){
-			let p = x[ j * 32 + i	 ];
-			c.fillStyle = "rgb("+p+","+p+","+p+")";
-			c.fillRect(i,j,1,1);
-		}
-	}
-	document.body.appendChild( canvas );
-}
-
