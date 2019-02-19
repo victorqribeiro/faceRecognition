@@ -99,7 +99,7 @@ class MLP {
 
 			}
 			it++;
-			if( it % 50 == 0 )
+			if( it % 2 == 0 )
 				console.log( it, Math.sqrt(s) );
 		};
 	}
