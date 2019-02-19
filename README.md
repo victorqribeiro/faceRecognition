@@ -4,6 +4,11 @@ A face recognition experiment in JavaScript using my [neural network](https://gi
 
 [![groupImg](http://img.youtube.com/vi/KzXpdcOYwv0/0.jpg)](http://www.youtube.com/watch?v=KzXpdcOYwv0)
 
+## About
+
+This experiment is a collection of "tools" to help create image data using the webcam in your browser. 
+The video above shows how I trained a model to recognize me in front of the computer. Later, I'll may capture hand gestures and atribute meaning to it like: play a song or scroll the page. I do thing I'll need to make some improvements to my MLP code to make it more robust, but that'll come with time.
+
 ## Capture Data
 
 captureData.html - Get image data from the webcam.
